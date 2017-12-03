@@ -1,0 +1,316 @@
+---problem 1---
+--articulation points---------
+DROP TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+psql:/home/naveen/iu_backup/assignments/adc/assignment_7/sol/Assignment_7_Soln_Problem1.sql:19: NOTICE:  relation "tc" already exists, skipping
+CREATE TABLE
+CREATE FUNCTION
+CREATE FUNCTION
+ transitive_closure 
+--------------------
+ 
+(1 row)
+
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+INSERT 0 12
+CREATE FUNCTION
+CREATE FUNCTION
+psql:/home/naveen/iu_backup/assignments/adc/assignment_7/sol/Assignment_7_Soln_Problem1.sql:82: NOTICE:  function articulation_points(pg_catalog.int4) does not exist, skipping
+DROP FUNCTION
+CREATE FUNCTION
+------following are the articulation points-------
+ node 
+------
+    2
+(1 row)
+
+
+----problem 2--
+--same generation pairs---
+DROP TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DROP TABLE
+CREATE TABLE
+CREATE FUNCTION
+ level_order_traversal 
+-----------------------
+ 
+(1 row)
+
+ id1 | id2 
+-----+-----
+   1 |   1
+   2 |   3
+   2 |   5
+   3 |   2
+   3 |   5
+   4 |   6
+   4 |   9
+   5 |   2
+   5 |   3
+   6 |   4
+   6 |   9
+   8 |   8
+   9 |   4
+   9 |   6
+(14 rows)
+
+----problem 3---
+--power set problem---
+DROP TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DROP FUNCTION
+CREATE FUNCTION
+  powerseta  
+-------------
+ {}
+ {4}
+ {1}
+ {4,1}
+ {5}
+ {4,5,1}
+ {4,5}
+ {5,1}
+ {3}
+ {5,1,3}
+ {4,5,1,3}
+ {4,1,3}
+ {4,3}
+ {1,3}
+ {4,5,3}
+ {5,3}
+ {2}
+ {4,5,2,1,3}
+ {5,2,1}
+ {4,5,2,1}
+ {4,2,1}
+ {4,2}
+ {5,2,3}
+ {2,1}
+ {4,5,2,3}
+ {4,5,2}
+ {4,2,3}
+ {5,2}
+ {2,3}
+ {2,1,3}
+ {4,2,1,3}
+ {5,2,1,3}
+(32 rows)
+
+
+--problem 4--
+--kmeans clustering---
+DROP TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+ clust_id | point_x | point_y 
+----------+---------+---------
+        3 |       1 |       1
+        3 |     1.5 |       2
+        1 |       3 |       4
+        2 |       5 |       7
+        1 |     3.5 |       5
+        1 |     4.5 |       5
+        1 |     3.5 |     4.5
+(7 rows)
+
+--cluster assignment of each point
+ cluster_id |  x  |  y  
+------------+-----+-----
+          3 |   1 |   1
+          3 | 1.5 |   2
+          1 |   3 |   4
+          2 |   5 |   7
+          1 | 3.5 |   5
+          1 | 4.5 |   5
+          1 | 3.5 | 4.5
+(7 rows)
+
+--centroids of each cluster--
+ id |   x   |   y   
+----+-------+-------
+  1 | 3.625 | 4.625
+  2 |     5 |     7
+  3 |  1.25 |   1.5
+(3 rows)
+
+--problem 5--
+--hubs authority algorithm--
+DROP TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ source | target 
+--------+--------
+      1 |      2
+      1 |      3
+      1 |      4
+      2 |      3
+      2 |      4
+      3 |      1
+      3 |      4
+      4 |      4
+(8 rows)
+
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+ hits 
+------
+ 
+(1 row)
+
+ source | target |      weight       
+--------+--------+-------------------
+      1 |      0 | 0.185439735388071
+      2 |      0 | 0.259615629543299
+      3 |      0 | 0.482143312008985
+      4 |      0 | 0.815934835707512
+(4 rows)
+
+ source | target |      weight       
+--------+--------+-------------------
+      1 |      0 | 0.647919821577304
+      2 |      0 | 0.539933184647753
+      3 |      0 | 0.416519885299695
+      4 |      0 | 0.339386573207159
+(4 rows)
+
+--problem 6--
+--minimum spanning tree--
+DROP TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+DROP FUNCTION
+CREATE FUNCTION
+ source_node | target_node 
+-------------+-------------
+           1 |           3
+           4 |           2
+           3 |           2
+           5 |           2
+           2 |           3
+           2 |           4
+           3 |           1
+           2 |           5
+(8 rows)
+
+
+--problem 7--
+--heap sort--
+DROP TABLE
+CREATE TABLE
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+ index | value 
+-------+-------
+     1 |     3
+     2 |     1
+     3 |     2
+     4 |     0
+     5 |     7
+     6 |     8
+     7 |     9
+     8 |    11
+     9 |     1
+    10 |     3
+(10 rows)
+
+DROP FUNCTION
+CREATE FUNCTION
+ binary_heapify 
+----------------
+ 
+(1 row)
+
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+DROP FUNCTION
+CREATE FUNCTION
+ heapsort 
+----------
+ 
+(1 row)
+
+ index | value 
+-------+-------
+     1 |     0
+     2 |     1
+     3 |     1
+     4 |     2
+     5 |     3
+     6 |     3
+     7 |     7
+     8 |     8
+     9 |     9
+    10 |    11
+(10 rows)
+
+
